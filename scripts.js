@@ -113,6 +113,55 @@ const enableSmoothAnchors = () => {
   });
 };
 
+const initNavIndicator = () => {
+  const nav = document.querySelector('.site-nav');
+  const indicator = nav?.querySelector('.nav-indicator');
+  const chips = nav ? Array.from(nav.querySelectorAll('.nav-chip')) : [];
+  if (!nav || !indicator || chips.length === 0) return;
+
+  const setIndicator = chip => {
+    const navRect = nav.getBoundingClientRect();
+    const chipRect = chip.getBoundingClientRect();
+    indicator.style.width = `${chipRect.width}px`;
+    indicator.style.transform = `translate3d(${chipRect.left - navRect.left}px, 0, 0)`;
+  };
+
+  const setActive = chip => {
+    chips.forEach(c => c.classList.toggle('is-active', c === chip));
+    setIndicator(chip);
+  };
+
+  const sectionMap = new Map();
+  chips.forEach(chip => {
+    const id = chip.dataset.section;
+    const section = id ? document.getElementById(id) : null;
+    if (section) {
+      sectionMap.set(section, chip);
+    }
+    chip.addEventListener('click', () => setActive(chip));
+  });
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const chip = sectionMap.get(entry.target);
+          if (chip) setActive(chip);
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+  sectionMap.forEach((_, section) => observer.observe(section));
+
+  window.addEventListener('resize', () => {
+    const active = chips.find(chip => chip.classList.contains('is-active'));
+    if (active) setIndicator(active);
+  });
+
+  setIndicator(chips[0]);
+};
+
 const enableScrollChoreography = () => {
   const root = document.documentElement;
   if (!root) return;
@@ -138,4 +187,5 @@ enableScrollReveals();
 enablePodTilt();
 initThemeToggle();
 enableSmoothAnchors();
+initNavIndicator();
 enableScrollChoreography();
