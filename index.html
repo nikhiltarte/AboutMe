@@ -24,9 +24,9 @@
       </div>
       <nav class="site-nav" aria-label="Primary">
         <span class="nav-indicator" aria-hidden="true"></span>
-        <a class="nav-chip is-active" href="#signature" data-section="signature">Signature</a>
-        <a class="nav-chip" href="#journey" data-section="journey">Journey</a>
-        <a class="nav-chip" href="#passion" data-section="passion">Passion</a>
+        <a class="nav-chip is-active" href="#experience" data-section="experience">Experience</a>
+        <a class="nav-chip" href="#capsules" data-section="capsules">Capsules</a>
+        <a class="nav-chip" href="#perspective" data-section="perspective">Perspective</a>
         <a class="nav-chip" href="#contact" data-section="contact">Connect</a>
       </nav>
       <div class="header-actions">
@@ -43,9 +43,9 @@
         <div class="hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">Edge AI · Performance Architecture · Open Source</p>
-            <h1>Nikhil Tarte — precision in motion.</h1>
+            <h1>Nikhil Tarte — experience-led performance authority.</h1>
             <p class="lede">
-              I am a Software Optimization Engineer at Arm HQ, turning complex performance puzzles across Android, Edge AI, and open-source stacks into elegant, measurable wins.
+              My craft is taking decade-long experience in Android, silicon, and runtime AI to squeeze every cycle from modern systems. From Cambridge to Hyderabad, every role sharpened a different layer of the stack—and this page puts that story front and center.
             </p>
             <div class="cta-group">
               <a class="cta primary" href="#contact">Collaborate</a>
@@ -107,147 +107,145 @@
         </div>
       </section>
 
-      <section class="pods snap-section" id="signature">
+      <section class="experience snap-section" id="experience">
         <div class="section-heading">
-          <p class="eyebrow">Signature Programs</p>
-          <h2>Pods engineered with the calm confidence of Cupertino.</h2>
-          <p>Every initiative is crafted as a sealed pod—clarity, polish, measurable velocity.</p>
+          <p class="eyebrow">Experience</p>
+          <h2>Every chapter sharpened how I think about performance.</h2>
+          <p>From carrier-grade fiber to flagship Android to Arm’s runtime lab—these are the roles that forged my instincts.</p>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card">
+            <header>
+              <div>
+                <p class="stamp">2024 → Today</p>
+                <h3>Arm HQ · Software Optimization Engineer</h3>
+              </div>
+              <img src="assets/logos/arm.svg" alt="Arm" />
+            </header>
+            <p class="location">Cambridge, England</p>
+            <ul>
+              <li>Lead performance lab efforts accelerating Meta’s Velox engine on Arm Neoverse.</li>
+              <li>Prototype runtime ML flows that bring edge inference within single-digit millisecond latency.</li>
+              <li>Steward critical open-source repos so Arm’s ecosystem inherits every breakthrough.</li>
+            </ul>
+          </article>
+          <article class="experience-card">
+            <header>
+              <div>
+                <p class="stamp">2019 → 2024</p>
+                <h3>Qualcomm · Senior / Staff Engineer</h3>
+              </div>
+              <img src="assets/logos/qualcomm.svg" alt="Qualcomm" />
+            </header>
+            <p class="location">Hyderabad, India</p>
+            <ul>
+              <li>Directed Pure AOSP bring-up for Snapdragon 8 series with Google Pixel teams.</li>
+              <li>Built ML frameworks and automation that shrank integration timelines by 40%.</li>
+              <li>Authored deployment tooling in Go, Bash, and Python; hardened CI/CD guardrails.</li>
+            </ul>
+          </article>
+          <article class="experience-card">
+            <header>
+              <div>
+                <p class="stamp">2015 → 2019</p>
+                <h3>Tejas Networks & Early Research</h3>
+              </div>
+              <img src="assets/logos/tejas.svg" alt="Tejas Networks" />
+            </header>
+            <p class="location">Bengaluru · Warangal · Pune</p>
+            <ul>
+              <li>Engineered ONT software plus L2/L3 protocol stacks for carrier-grade fiber networks.</li>
+              <li>Served as Research & Teaching Assistant at NIT Warangal, mentoring M.Tech cohorts.</li>
+              <li>Published on gesture-driven AV systems enabling inclusive communication.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="experience-highlight">
+          <p>Runner up D.E. Shaw D.E. Code Challenge · Intel India Silver Medalist · Finepro Best Project</p>
+          <p>Education: M.Tech Computer Science — NIT Warangal · B.E. Computer Engineering — Sinhgad College</p>
+        </div>
+      </section>
+
+      <section class="capsules snap-section" id="capsules">
+        <div class="section-heading">
+          <p class="eyebrow">Program Capsules</p>
+          <h2>Selected initiatives that show how experience translates into impact.</h2>
         </div>
         <div class="pod-grid">
           <article class="pod-card" data-accent="blue">
             <header>
               <img src="assets/logos/arm.svg" alt="Arm" />
               <div>
-                <h3>Arm · Performance Lab</h3>
-                <p>Dec 2024 – Present · Cambridge</p>
+                <h3>Velox Perf Suite</h3>
+                <p>2024 · Arm</p>
               </div>
             </header>
             <ul>
-              <li>Optimizing Velox execution engine for latest Arm Neoverse CPUs.</li>
-              <li>Edge & runtime ML research that makes inference whisper-fast.</li>
-              <li>Maintaining open-source perf tooling for the Arm community.</li>
+              <li>Custom profilers + microbench harness to expose Neoverse cache behaviors.</li>
+              <li>Performance guardrails gating every Velox merge via GitHub Actions.</li>
+              <li>Documented playbooks for Meta + Arm partner teams.</li>
             </ul>
           </article>
-
           <article class="pod-card" data-accent="violet">
             <header>
               <img src="assets/logos/qualcomm.svg" alt="Qualcomm" />
               <div>
-                <h3>Qualcomm · Pure AOSP</h3>
-                <p>2019 – 2024 · Hyderabad</p>
+                <h3>Pure AOSP Automation</h3>
+                <p>2021 · Qualcomm</p>
               </div>
             </header>
             <ul>
-              <li>Directed Android Pure AOSP compilation for Snapdragon 8 series.</li>
-              <li>Built ML frameworks & tooling that cut integration time.</li>
-              <li>Automation leader for deployment flows across Go, Bash, Python.</li>
+              <li>Pipeline stitching Go, Bash, Make, and Python to unify Pixel bring-up.</li>
+              <li>Nightly verification matrix covering kernels, HALs, CTS, and perf smoke.</li>
+              <li>Reusable infrastructure now backing Snapdragon beta programs.</li>
             </ul>
           </article>
-
           <article class="pod-card" data-accent="amber">
             <header>
               <img src="assets/logos/tejas.svg" alt="Tejas Networks" />
               <div>
-                <h3>Tejas Networks</h3>
-                <p>2018 – 2019 · Bengaluru</p>
+                <h3>Fiber Reliability Toolkit</h3>
+                <p>2018 · Tejas</p>
               </div>
             </header>
             <ul>
-              <li>Engineered ONT software and L2/L3 protocols for carrier-grade fiber.</li>
-              <li>Shipped reliable network stacks with measurable throughput wins.</li>
-            </ul>
-          </article>
-
-          <article class="pod-card" data-accent="teal">
-            <header>
-              <img src="assets/logos/nitw.svg" alt="NIT Warangal" />
-              <div>
-                <h3>Research & Teaching</h3>
-                <p>2016 – 2018 · Warangal</p>
-              </div>
-            </header>
-            <ul>
-              <li>Guided M.Tech cohorts on performance-first software engineering.</li>
-              <li>Published inclusive communication research using gesture + AV.</li>
-              <li>Mentored student teams on open-source contributions.</li>
+              <li>Telemetry + anomaly heuristics delivering 15% faster MTTR for ISPs.</li>
+              <li>Protocol validation harness spanning L2/L3 features.</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section class="journey snap-section" id="journey">
+      <section class="perspective snap-section" id="perspective">
         <div class="section-heading">
-          <p class="eyebrow">Journey</p>
-          <h2>From Pune to Cambridge, always chasing elegant velocity.</h2>
+          <p class="eyebrow">Perspective</p>
+          <h2>What guiding ideas show up regardless of the role?</h2>
         </div>
-        <div class="timeline">
-          <article class="timeline-card">
-            <div class="stamp">2024 → Today</div>
-            <h3>Arm HQ · Software Optimization Engineer</h3>
-            <p>Meta Velox acceleration · Runtime ML at the edge · Open-source stewardship.</p>
-          </article>
-          <article class="timeline-card">
-            <div class="stamp">2019 → 2024</div>
-            <h3>Qualcomm · Senior Software Engineer</h3>
-            <p>Pure AOSP bring-up for Snapdragon & Pixel · ML frameworks · automation pipelines.</p>
-          </article>
-          <article class="timeline-card">
-            <div class="stamp">2018</div>
-            <h3>Tejas Networks · R&D Engineer</h3>
-            <p>ONT software and high-fidelity protocol stacks that boosted reliability.</p>
-          </article>
-          <article class="timeline-card">
-            <div class="stamp">2016 → 2018</div>
-            <h3>NIT Warangal · M.Tech + RTA</h3>
-            <p>Computer Science specialization, teaching assistance, research publication.</p>
-          </article>
-          <article class="timeline-card">
-            <div class="stamp">2011 → 2014</div>
-            <h3>Sinhgad College of Engineering · B.E.</h3>
-            <p>Computer Engineering foundation with hands-on embedded + systems work.</p>
-          </article>
-        </div>
-        <div class="logo-row" aria-label="Institutions and partners">
-          <img src="assets/logos/arm.svg" alt="Arm" />
-          <img src="assets/logos/qualcomm.svg" alt="Qualcomm" />
-          <img src="assets/logos/nitw.svg" alt="NIT Warangal" />
-          <img src="assets/logos/sinhgad.svg" alt="Sinhgad College" />
-          <img src="assets/logos/careerpoint.svg" alt="Career Point University" />
-          <img src="assets/logos/centralrailway.svg" alt="Central Railway School" />
-        </div>
-      </section>
-
-      <section class="passion snap-section" id="passion">
-        <div class="section-heading">
-          <p class="eyebrow">Passion Capsules</p>
-          <h2>Threads that keep me in flow.</h2>
-        </div>
-        <div class="passion-grid">
+        <div class="perspective-grid">
           <article>
-            <h3>Edge AI Rituals</h3>
-            <p>Designing runtime-aware ML systems that gracefully scale from handheld to hyperscale.</p>
+            <h3>Experience-led Decision Making</h3>
+            <p>Data flows + intuition from 11 years guide what to instrument, what to automate, and what deserves experimentation.</p>
             <ul>
-              <li>Runtime ML acceleration</li>
-              <li>On-device inference</li>
-              <li>Neoverse deep dives</li>
+              <li>Runtime ML forecasting</li>
+              <li>Perf cost dashboards</li>
+              <li>Collaborative RFC rituals</li>
             </ul>
           </article>
           <article>
-            <h3>Open-Source Guardianship</h3>
-            <p>Code stewardship across Android AOSP, kernels, and internal tooling with relentless CI discipline.</p>
+            <h3>Open Source as a Habit</h3>
+            <p>Most wins survive because they are upstreamed. I maintain GitHub identities for Arm work and personal research.</p>
             <ul>
               <li>Github · <a href="https://github.com/NikhilTarte-Arm" target="_blank" rel="noreferrer">@NikhilTarte-Arm</a></li>
               <li>Github · <a href="https://github.com/NikhilTarte" target="_blank" rel="noreferrer">@NikhilTarte</a></li>
-              <li>Pure AOSP evangelism</li>
             </ul>
           </article>
           <article>
             <h3>People & Mentorship</h3>
-            <p>From research assistantships to industry mentoring, I invest in teams, not only commits.</p>
+            <p>Leading experiences matter, but teaching what we learn compounds the impact.</p>
             <ul>
               <li>NIT Warangal mentorship</li>
-              <li>Competition jury & speaker</li>
-              <li>Advocate for inclusive tech</li>
+              <li>Conference speaker & competition juror</li>
+              <li>Advocate for inclusive products</li>
             </ul>
           </article>
         </div>
