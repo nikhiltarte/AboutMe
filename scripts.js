@@ -113,8 +113,29 @@ const enableSmoothAnchors = () => {
   });
 };
 
+const enableScrollChoreography = () => {
+  const root = document.documentElement;
+  if (!root) return;
+  let ticking = false;
+  const setProgress = () => {
+    const max = root.scrollHeight - window.innerHeight;
+    const progress = max > 0 ? window.scrollY / max : 0;
+    root.style.setProperty('--scroll-progress', progress.toFixed(4));
+    ticking = false;
+  };
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(setProgress);
+      ticking = true;
+    }
+  });
+  window.addEventListener('resize', setProgress);
+  setProgress();
+};
+
 setYear();
 enableScrollReveals();
 enablePodTilt();
 initThemeToggle();
 enableSmoothAnchors();
+enableScrollChoreography();
