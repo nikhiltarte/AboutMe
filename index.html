@@ -116,7 +116,7 @@
             </div>
             <dl class="signal-grid">
               <div>
-                <dt>11+ yrs</dt>
+                <dt><span id="experienceYears">8+</span> yrs</dt>
                 <dd>Systems innovation</dd>
               </div>
               <div>
@@ -134,10 +134,10 @@
               <img src="assets/nikhil-portrait.jpg" alt="Nikhil Tarte in a classical hall with marble architecture" width="700" height="934" loading="lazy" />
             </figure>
             <div class="hero-pod" aria-label="Interactive highlight pod">
-              <div class="pod-core">
-                <p>Currently</p>
-                <h2>Arm · R&D</h2>
-                <p class="small">Software Optimization Engineer</p>
+            <div class="pod-core">
+              <p>Currently</p>
+              <h2>Arm · R&D</h2>
+              <p class="small">Velox + DC Perf · Software Optimization Engineer</p>
                 <ul>
                   <li>Meta Velox acceleration on latest Neoverse CPUs</li>
                   <li>Runtime ML for Edge inference</li>
@@ -146,6 +146,7 @@
               </div>
               <div class="orbital">
                 <img src="assets/logos/arm.png" alt="Arm logo" />
+              <img src="assets/logos/velox.svg" alt="Velox & DC Perf" />
                 <img src="assets/logos/qualcomm.png" alt="Qualcomm logo" />
                 <img src="assets/logos/tejas.png" alt="Tejas Networks logo" />
                 <img src="assets/logos/nitw.png" alt="NIT Warangal logo" />
@@ -184,7 +185,7 @@
               </div>
               <img src="assets/logos/arm.png" alt="Arm" />
             </header>
-            <p class="location">Cambridge, England</p>
+            <p class="location">Cambridge, United Kingdom</p>
             <ul>
               <li>Partner with Arm’s performance lab to steadily raise Velox on Neoverse.</li>
               <li>Prototype runtime ML flows and microbenchmarks that keep edge inference within single-digit millisecond latency.</li>
@@ -241,44 +242,44 @@
       <section class="skills snap-section" id="skills">
         <div class="section-heading">
           <p class="eyebrow">Skills · Always Growing</p>
-          <h2>Software optimization habits that keep scaling.</h2>
-          <p>Blending Arm’s performance playbooks with Qualcomm’s ML rigor means the toolkit stays practical—profilers, converters, automation, and calm communication.</p>
+          <h2>Hands-on stack: languages, systems, and AI tooling.</h2>
+          <p>Think of this as the suitcase I bring to every build—code fluency, runtime instincts, and the operational discipline that keeps things shippable.</p>
         </div>
         <div class="skills-grid">
           <article class="skill-card">
             <img src="assets/icons/ai.svg" alt="AI icon" />
             <div>
-              <h3>Runtime AI & NPU</h3>
-              <p>Velox operator tuning, Qualcomm Neural Processing Engine converters, ONNX/TFLite ingestion.</p>
+              <h3>Languages & Tooling</h3>
+              <p>C · C++ · Go · Python · Bash · Objective-C · SQL/NoSQL · Make · Soong · Bazel · Git · Docker.</p>
             </div>
             <ul>
-              <li>Kernel + graph profiling on Neoverse and Snapdragon Gen3.</li>
-              <li>Edge inference experiments, latency guardrails, determinism.</li>
-              <li>Open notes + samples on <a href="https://github.com/NikhilTarte" target="_blank" rel="noreferrer">GitHub</a>.</li>
+              <li>Debugging with GDB/Llvm, logcat, perf, Arm Streamline.</li>
+              <li>CI/CD wiring with GitHub Actions, Jenkins, custom scripts.</li>
+              <li>Library-level profiling + instrumentation published on <a href="https://github.com/NikhilTarte" target="_blank" rel="noreferrer">GitHub</a>.</li>
             </ul>
           </article>
           <article class="skill-card">
             <img src="assets/icons/optimize.svg" alt="Optimization icon" />
             <div>
-              <h3>System & Build Optimization</h3>
-              <p>Pure AOSP bring-up, VSDK packaging, CI/CD guardrails that keep releases boringly stable.</p>
+              <h3>Concepts & Platforms</h3>
+              <p>Android AOSP internals, Qualcomm Snapdragon (Gen2/Gen3), Arm Neoverse, runtime AI, system design.</p>
             </div>
             <ul>
-              <li>Make/Soong/Bazel orchestration with automation hooks.</li>
-              <li>Cache/memory microbench harnesses for Arm labs.</li>
-              <li>Deployment tooling across Go, Bash, Python.</li>
+              <li>Qualcomm Neural Processing Engine converters (TFLite ↔ ONNX).</li>
+              <li>Velox operator tuning, cache + memory microbench harnesses.</li>
+              <li>VSDK packaging, OTA automation, secure boot flows.</li>
             </ul>
           </article>
           <article class="skill-card">
             <img src="assets/icons/build.svg" alt="Collaboration icon" />
             <div>
-              <h3>Cross-Team Delivery</h3>
-              <p>Working with Google, Meta, Samsung, and partner silicon teams while keeping communication measured.</p>
+              <h3>Collaboration & Delivery</h3>
+              <p>Working with Google, Meta, Samsung, internal Arm labs, and open-source communities.</p>
             </div>
             <ul>
-              <li>RFC writing, design reviews, async updates.</li>
-              <li>Mentoring (NIT Warangal, Arm internal cohorts).</li>
-              <li>Governance for responsible AI rollouts.</li>
+              <li>Product RFCs, weekly async updates, calm incident response.</li>
+              <li>Mentorship (NIT Warangal, Arm internal cohorts, open-source PRs).</li>
+              <li>Lightweight governance for responsible AI rollouts.</li>
             </ul>
           </article>
         </div>
@@ -417,7 +418,7 @@
     </main>
 
     <footer>
-      <small>© <span id="year"></span> Nikhil Tarte · Crafted with intent.</small>
+      <small>© <span id="year"></span> Nikhil Tarte</small>
     </footer>
 
     <script src="scripts.js" type="module"></script>

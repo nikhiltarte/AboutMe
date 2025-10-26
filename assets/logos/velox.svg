@@ -1,0 +1,12 @@
+<svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f9bff" />
+      <stop offset="100%" stop-color="#a24bff" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="80" rx="20" fill="#050712" />
+  <path d="M20 60 Q30 20 60 40 T100 30" stroke="url(#vt)" stroke-width="6" fill="none" stroke-linecap="round" />
+  <text x="20" y="36" fill="#88c3ff" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="20" font-weight="600">Velox</text>
+  <text x="20" y="54" fill="#d2c5ff" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="14" font-weight="500">&amp; DC Perf</text>
+</svg>

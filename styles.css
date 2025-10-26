@@ -566,6 +566,9 @@ body.theme-light .theme-toggle .toggle-icon {
   color: var(--muted);
   line-height: 1.5;
 }
+.skill-card ul li + li {
+  margin-top: 0.4rem;
+}
 
 .skill-card a {
   color: var(--text);
@@ -706,12 +709,11 @@ body.theme-light .theme-toggle .toggle-icon {
 }
 
 .logo-row img {
-  width: 72px;
-  height: 72px;
-  padding: 0.75rem;
-  border-radius: 1rem;
-  background: var(--badge-bg);
-  border: 1px solid var(--border);
+  width: clamp(72px, 10vw, 120px);
+  max-height: 70px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35));
+  background: transparent;
 }
 
 .passion-grid {
@@ -801,11 +803,31 @@ footer {
 }
 
 @media (max-width: 640px) {
-  .site-nav {
-    display: none;
+  .site-header {
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
   }
-  main {
-    width: 92vw;
-    padding-top: 6rem;
+  .site-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .social-inline {
+    width: 100%;
+  }
+  .social-chip {
+    flex: 1 1 calc(50% - 0.5rem);
+    justify-content: center;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-card {
+    grid-template-columns: 1fr;
   }
 }

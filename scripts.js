@@ -1,6 +1,12 @@
 const setYear = () => {
   const span = document.getElementById('year');
   if (span) span.textContent = new Date().getFullYear();
+  const exp = document.getElementById('experienceYears');
+  if (exp) {
+    const startYear = 2016;
+    const currentYear = new Date().getFullYear();
+    exp.textContent = Math.max(currentYear - startYear, 8);
+  }
 };
 
 const enableScrollReveals = () => {
@@ -75,7 +81,13 @@ const initThemeToggle = () => {
       return null;
     }
   })();
-  applyTheme(stored || (prefersDark.matches ? 'dark' : 'light'));
+  if (stored) {
+    applyTheme(stored);
+  } else {
+    const hour = new Date().getHours();
+    const daylight = hour >= 7 && hour < 19;
+    applyTheme(daylight ? 'light' : 'dark');
+  }
   toggle.addEventListener('click', () => {
     const next = document.body.classList.contains('theme-light') ? 'dark' : 'light';
     applyTheme(next);
