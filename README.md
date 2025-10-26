@@ -1,4 +1,4 @@
-# Nikhil Tarte AboutMe
+# nikiltarte.github.io
 
 Interactive, Apple-inspired HTML5 introduction site for Nikhil Tarte.
 
