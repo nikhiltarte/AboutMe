@@ -253,14 +253,6 @@ main {
   z-index: 0;
 }
 
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  flex-shrink: 0;
-}
-
 .ghost-link {
   border-radius: 999px;
   padding: 0.6rem 1.4rem;
@@ -323,6 +315,13 @@ body.theme-light .theme-toggle .toggle-label {
   z-index: 10;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(12px);
+}
+
+@media (max-width: 768px) {
+  .floating-toggle {
+    bottom: 1rem;
+    left: 1rem;
+  }
 }
 
 .sr-only {
