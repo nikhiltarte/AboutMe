@@ -372,7 +372,13 @@ body.theme-light .theme-toggle .toggle-icon {
 .hero-copy h1 {
   font-size: clamp(2.4rem, 4vw, 3.6rem);
   line-height: 1.1;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.sublede {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
 }
 
 .eyebrow {
