@@ -139,6 +139,10 @@ main {
   scroll-margin-top: 120px;
 }
 
+.hero {
+  padding-top: 2.5rem;
+}
+
 .site-header {
   position: sticky;
   top: 0;
