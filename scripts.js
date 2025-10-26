@@ -174,9 +174,33 @@ const initNavIndicator = () => {
   setIndicator(chips[0]);
 };
 
+const initContactForm = () => {
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+  const status = form.querySelector('.form-status');
+  form.addEventListener('submit', async event => {
+    event.preventDefault();
+    if (status) status.textContent = 'Sending...';
+    const formData = new FormData(form);
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { Accept: 'application/json' },
+      });
+      if (!response.ok) throw new Error('Failed request');
+      form.reset();
+      if (status) status.textContent = 'Thanks for reaching out. Talk soon.';
+    } catch (error) {
+      if (status) status.textContent = 'Could not send. Please email me directly.';
+    }
+  });
+};
+
 setYear();
 enableScrollReveals();
 enablePodTilt();
 initThemeToggle();
 enableSmoothAnchors();
 initNavIndicator();
+initContactForm();
