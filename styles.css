@@ -11,6 +11,9 @@
   --header-bg: rgba(2, 3, 6, 0.85);
   --shadow-color: rgba(0, 0, 0, 0.55);
   --shadow-soft: rgba(0, 0, 0, 0.65);
+  --shadow-ambient: 0 30px 70px rgba(0, 0, 0, 0.55);
+  --shadow-medium: 0 20px 45px rgba(0, 0, 0, 0.4);
+  --shadow-light: 0 12px 30px rgba(0, 0, 0, 0.3);
   --bg-gradient: radial-gradient(circle at top, #02040c 0%, #05070f 55%, #020205 100%);
   --glow-layer: radial-gradient(circle at 15% 15%, rgba(35, 136, 255, 0.25), transparent 50%),
     radial-gradient(circle at 85% 0%, rgba(161, 71, 255, 0.22), transparent 45%),
@@ -39,6 +42,9 @@ body.theme-light {
   --header-bg: rgba(255, 255, 255, 0.7);
   --shadow-color: rgba(15, 23, 42, 0.18);
   --shadow-soft: rgba(15, 23, 42, 0.15);
+  --shadow-ambient: 0 30px 70px rgba(15, 23, 42, 0.25);
+  --shadow-medium: 0 20px 45px rgba(15, 23, 42, 0.2);
+  --shadow-light: 0 12px 30px rgba(15, 23, 42, 0.18);
   --bg-gradient: radial-gradient(circle at top, #f5f7fb 0%, #edf1f7 55%, #e0e6f0 100%);
   --glow-layer: radial-gradient(circle at 20% 20%, rgba(120, 176, 255, 0.3), transparent 50%),
     radial-gradient(circle at 80% 0%, rgba(255, 196, 120, 0.25), transparent 40%),
@@ -169,6 +175,7 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.08);
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-light);
   min-width: 40%;
   width: clamp(380px, 60vw, 720px);
 }
@@ -502,7 +509,7 @@ body.theme-light .theme-toggle .toggle-label {
   border-radius: 2rem;
   padding: 2rem;
   border: 1px solid var(--border);
-  box-shadow: 0 40px 100px var(--shadow-color);
+  box-shadow: var(--shadow-ambient);
   position: relative;
   overflow: hidden;
   transform-style: preserve-3d;
@@ -551,6 +558,7 @@ body.theme-light .theme-toggle .toggle-label {
   padding: 1.5rem;
   background: linear-gradient(135deg, rgba(120, 176, 255, 0.18), var(--card));
   border: 1px solid var(--border);
+  box-shadow: var(--shadow-light);
 }
 
 .experience-grid {
@@ -565,7 +573,7 @@ body.theme-light .theme-toggle .toggle-label {
   border-radius: 1.75rem;
   border: 1px solid var(--border);
   padding: 1.75rem;
-  box-shadow: 0 25px 60px var(--shadow-color);
+  box-shadow: var(--shadow-medium);
 }
 
 .experience-card header {
@@ -612,6 +620,7 @@ body.theme-light .theme-toggle .toggle-label {
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.04);
   color: var(--muted);
+  box-shadow: var(--shadow-light);
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -638,7 +647,7 @@ body.theme-light .theme-toggle .toggle-label {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--shadow-medium);
 }
 
 .skill-card img {
@@ -754,6 +763,7 @@ body.theme-light .theme-toggle .toggle-label {
   border-radius: 1.5rem;
   border: 1px solid var(--border);
   background: var(--tile);
+  box-shadow: var(--shadow-light);
 }
 
 .perspective-grid ul {
