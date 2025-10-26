@@ -716,9 +716,7 @@ body.theme-light .theme-toggle .toggle-icon {
   max-height: 70px;
   object-fit: contain;
   filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.35));
-  background: #fff;
-  border-radius: 0.75rem;
-  padding: 0.35rem;
+  background: transparent;
 }
 
 .passion-grid {
@@ -860,14 +858,19 @@ footer {
   }
   .header-actions {
     width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .ghost-link {
+    width: 100%;
+    text-align: center;
   }
   .social-inline {
     width: 100%;
+    gap: 0.5rem;
   }
   .social-chip {
-    flex: 1 1 100%;
+    flex: 1 1 calc(50% - 0.5rem);
     justify-content: center;
   }
   .hero-grid {
