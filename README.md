@@ -14,3 +14,7 @@ Any static host (GitHub Pages, Vercel, Netlify, Cloudflare Pages, S3, etc.) can 
 ## Contact form
 
 The contact form posts to [FormSubmit](https://formsubmit.co/). Submit one message manually to the address to confirm forwarding to `nikhilttarte@gmail.com`, then future visitors can reach you directly.
+
+## License
+
+Copyright (c) Nikhil Tarte. All rights reserved. No part of this site or repository may be reused without written permission.
