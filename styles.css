@@ -338,6 +338,7 @@ body.theme-light .theme-toggle .toggle-icon {
   display: flex;
   gap: 1rem;
   margin: 1.5rem 0 2rem;
+  flex-wrap: wrap;
 }
 
 .cta {
@@ -357,6 +358,38 @@ body.theme-light .theme-toggle .toggle-icon {
 .cta.secondary {
   border-color: var(--border);
   color: var(--text);
+}
+
+.social-inline {
+  display: inline-flex;
+  gap: 0.85rem;
+  align-items: center;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.social-inline a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.1rem;
+}
+
+.social-inline a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.social-inline a:hover::after {
+  transform: scaleX(1);
 }
 
 .signal-grid {
@@ -431,6 +464,33 @@ body.theme-light .theme-toggle .toggle-icon {
   border: 1px solid var(--border);
 }
 
+.ai-panel {
+  padding-top: 0;
+}
+
+.ai-card {
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--border);
+  background: linear-gradient(130deg, rgba(35, 136, 255, 0.12), rgba(4, 6, 12, 0.9));
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.5);
+}
+
+.ai-card h2 {
+  margin: 0.25rem 0 1rem;
+}
+
+.ai-card p {
+  color: var(--muted);
+  max-width: 75ch;
+}
+
+.ai-card ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
 .experience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
