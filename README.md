@@ -1,4 +1,4 @@
-# NikhilTarteWebsite
+# Nikhil Tarte AboutMe
 
 Interactive, Apple-inspired HTML5 introduction site for Nikhil Tarte.
 
