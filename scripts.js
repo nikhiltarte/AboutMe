@@ -84,9 +84,7 @@ const initThemeToggle = () => {
   if (stored) {
     applyTheme(stored);
   } else {
-    const hour = new Date().getHours();
-    const daylight = hour >= 7 && hour < 19;
-    applyTheme(daylight ? 'light' : 'dark');
+    applyTheme(prefersDark.matches ? 'dark' : 'dark');
   }
   toggle.addEventListener('click', () => {
     const next = document.body.classList.contains('theme-light') ? 'dark' : 'light';
