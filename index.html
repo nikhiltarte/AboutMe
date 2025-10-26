@@ -9,19 +9,19 @@
     <meta name="author" content="Nikhil Tarte" />
     <meta name="color-scheme" content="dark light" />
     <meta name="theme-color" content="#02040c" />
-    <link rel="canonical" href="https://nikhiltarte.github.io/NikhilTarteWebsite/" />
+    <link rel="canonical" href="https://nikhiltarte.github.io/AboutMe/" />
     <meta name="robots" content="index,follow" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Nikhil Tarte · Experience-Led Performance Leader" />
     <meta property="og:description" content="Arm software optimization engineer blending runtime AI, Velox acceleration, and Pure AOSP mastery." />
-    <meta property="og:url" content="https://nikhiltarte.github.io/NikhilTarteWebsite/" />
+    <meta property="og:url" content="https://nikhiltarte.github.io/AboutMe/" />
     <meta property="og:site_name" content="Nikhil Tarte Portfolio" />
-    <meta property="og:image" content="https://nikhiltarte.github.io/NikhilTarteWebsite/assets/nikhil-portrait.jpg" />
+    <meta property="og:image" content="https://nikhiltarte.github.io/AboutMe/assets/nikhil-portrait.jpg" />
     <meta property="og:image:alt" content="Portrait of Nikhil Tarte" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Nikhil Tarte · Experience-Led Performance Leader" />
     <meta name="twitter:description" content="Arm software optimization engineer blending runtime AI, Velox acceleration, and Pure AOSP mastery." />
-    <meta name="twitter:image" content="https://nikhiltarte.github.io/NikhilTarteWebsite/assets/nikhil-portrait.jpg" />
+    <meta name="twitter:image" content="https://nikhiltarte.github.io/AboutMe/assets/nikhil-portrait.jpg" />
     <title>Nikhil Tarte · Experience-Led Performance Leader</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,18 +32,13 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Nikhil Tarte",
-        "url": "https://nikhiltarte.github.io/NikhilTarteWebsite/",
-        "image": "https://nikhiltarte.github.io/NikhilTarteWebsite/assets/nikhil-portrait.jpg",
+        "url": "https://nikhiltarte.github.io/AboutMe/",
+        "image": "https://nikhiltarte.github.io/AboutMe/assets/nikhil-portrait.jpg",
         "jobTitle": "Software Optimization Engineer",
         "worksFor": {
           "@type": "Organization",
           "name": "Arm"
         },
-        "sameAs": [
-          "https://www.linkedin.com/in/nikhiltarte",
-          "https://github.com/NikhilTarte",
-          "https://github.com/NikhilTarte-Arm"
-        ],
         "knowsAbout": [
           "Performance engineering",
           "Runtime machine learning",
@@ -75,6 +70,7 @@
       <nav class="site-nav" aria-label="Primary">
         <span class="nav-indicator" aria-hidden="true"></span>
         <a class="nav-chip is-active" href="#experience" data-section="experience">Experience</a>
+        <a class="nav-chip" href="#skills" data-section="skills">Skills</a>
         <a class="nav-chip" href="#capsules" data-section="capsules">Capsules</a>
         <a class="nav-chip" href="#perspective" data-section="perspective">Perspective</a>
         <a class="nav-chip" href="#contact" data-section="contact">Connect</a>
@@ -95,15 +91,27 @@
             <p class="eyebrow">Edge AI · Performance Architecture · Open Source</p>
             <h1>Nikhil Tarte — experience-led performance partner.</h1>
             <p class="lede">
-              I’ve been fortunate to work with global companies and tech giants, learning how each layer of Android, silicon, and runtime AI responds under pressure. The lessons here aren’t hype—they’re the steady habits that keep teams shipping quietly reliable systems.
+              I’ve worked with global companies and tech giants on Android, silicon, and runtime AI problems—optimizing neural processing engines, profiling Velox operators, and tuning build systems without the drama. The story below simply shows how that hands-on experience helps teams stay grounded while shipping dependable systems.
             </p>
             <div class="cta-group">
               <a class="cta primary" href="#contact">Collaborate</a>
               <div class="social-inline" aria-label="Primary profiles">
-                <a href="https://www.linkedin.com/in/nikhiltarte" target="_blank" rel="noreferrer">LinkedIn</a>
-                <a href="https://github.com/NikhilTarte" target="_blank" rel="noreferrer">GitHub</a>
-                <a href="https://instagram.com/nikhiltarte" target="_blank" rel="noreferrer">Instagram</a>
-                <a href="https://www.facebook.com/nikhiltarte" target="_blank" rel="noreferrer">Facebook</a>
+                <a class="social-chip" href="https://www.linkedin.com/in/nikhiltarte" target="_blank" rel="noreferrer">
+                  <img src="assets/icons/linkedin.svg" alt="" aria-hidden="true" />
+                  <span>LinkedIn</span>
+                </a>
+                <a class="social-chip" href="https://github.com/NikhilTarte" target="_blank" rel="noreferrer">
+                  <img src="assets/icons/github.svg" alt="" aria-hidden="true" />
+                  <span>GitHub</span>
+                </a>
+                <a class="social-chip" href="https://instagram.com/nikhiltarte" target="_blank" rel="noreferrer">
+                  <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+                  <span>Instagram</span>
+                </a>
+                <a class="social-chip" href="https://www.facebook.com/nikhiltarte" target="_blank" rel="noreferrer">
+                  <img src="assets/icons/facebook.svg" alt="" aria-hidden="true" />
+                  <span>Facebook</span>
+                </a>
               </div>
             </div>
             <dl class="signal-grid">
@@ -161,24 +169,6 @@
         </div>
       </section>
 
-      <section class="ai-panel snap-section" id="ai">
-        <div class="ai-card">
-          <div>
-            <p class="eyebrow">AI Practice</p>
-            <h2>Runtime AI that respects latency budgets.</h2>
-          </div>
-          <p>
-            I treat AI systems as performance projects: smallest model that satisfies the signal, most deterministic runtime possible, and instrumentation everywhere.
-            Current work blends on-device inference, Velox operator tuning, and lightweight reinforcement loops that help products self-correct instead of over-optimizing in hindsight.
-          </p>
-          <ul>
-            <li>Edge inference experiments across phones, servers, and Arm dev boards.</li>
-            <li>Tooling to profile transformer + diffusion operators on Neoverse.</li>
-            <li>Governance playbooks so AI features roll out responsibly.</li>
-          </ul>
-        </div>
-      </section>
-
       <section class="experience snap-section" id="experience">
         <div class="section-heading">
           <p class="eyebrow">Experience</p>
@@ -197,7 +187,7 @@
             <p class="location">Cambridge, England</p>
             <ul>
               <li>Partner with Arm’s performance lab to steadily raise Velox on Neoverse.</li>
-              <li>Prototype runtime ML flows that bring edge inference within single-digit millisecond latency.</li>
+              <li>Prototype runtime ML flows and microbenchmarks that keep edge inference within single-digit millisecond latency.</li>
               <li>Care for open-source repos so the Arm ecosystem inherits every incremental gain.</li>
             </ul>
           </article>
@@ -212,7 +202,8 @@
             <p class="location">Hyderabad, India</p>
             <ul>
               <li>Coordinated Pure AOSP bring-up for Snapdragon 8 series alongside Google Pixel teams.</li>
-              <li>Built ML frameworks and automation that helped shrink integration timelines by 40%.</li>
+              <li>Developed Qualcomm Neural Processing Engine converters for TensorFlow Lite/ONNX models and tuned runtime libraries for Gen2/Gen3 silicon.</li>
+              <li>Built ML frameworks and automation that helped shrink integration timelines by ~40%.</li>
               <li>Authored deployment tooling in Go, Bash, and Python, keeping CI/CD guardrails boringly stable.</li>
             </ul>
           </article>
@@ -228,13 +219,68 @@
             <ul>
               <li>Helped engineer ONT software and L2/L3 protocol stacks for carrier-grade fiber networks.</li>
               <li>Served as Research & Teaching Assistant at NIT Warangal, mentoring M.Tech cohorts.</li>
-              <li>Published on gesture-driven AV systems enabling inclusive communication.</li>
+              <li>Published on gesture-driven AV systems enabling inclusive communication and built ML prototypes (emotion recognition, NLP engines) from scratch.</li>
             </ul>
           </article>
         </div>
         <div class="experience-highlight">
-          <p>Runner up D.E. Shaw D.E. Code Challenge · Intel India Silver Medalist · Finepro Best Project</p>
-          <p>Education: M.Tech Computer Science — NIT Warangal · B.E. Computer Engineering — Sinhgad College</p>
+          <article class="highlight-tile">
+            <p class="eyebrow">Recognition</p>
+            <p>Runner up D.E. Shaw D.E. Code Challenge · Intel India Silver Medalist · Finepro Best Project awardee.</p>
+          </article>
+          <article class="highlight-tile">
+            <p class="eyebrow">Education</p>
+            <ul>
+              <li>M.Tech Computer Science — NIT Warangal</li>
+              <li>B.E. Computer Engineering — Sinhgad College</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills snap-section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skills · Always Growing</p>
+          <h2>Software optimization habits that keep scaling.</h2>
+          <p>Blending Arm’s performance playbooks with Qualcomm’s ML rigor means the toolkit stays practical—profilers, converters, automation, and calm communication.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <img src="assets/icons/ai.svg" alt="AI icon" />
+            <div>
+              <h3>Runtime AI & NPU</h3>
+              <p>Velox operator tuning, Qualcomm Neural Processing Engine converters, ONNX/TFLite ingestion.</p>
+            </div>
+            <ul>
+              <li>Kernel + graph profiling on Neoverse and Snapdragon Gen3.</li>
+              <li>Edge inference experiments, latency guardrails, determinism.</li>
+              <li>Open notes + samples on <a href="https://github.com/NikhilTarte" target="_blank" rel="noreferrer">GitHub</a>.</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <img src="assets/icons/optimize.svg" alt="Optimization icon" />
+            <div>
+              <h3>System & Build Optimization</h3>
+              <p>Pure AOSP bring-up, VSDK packaging, CI/CD guardrails that keep releases boringly stable.</p>
+            </div>
+            <ul>
+              <li>Make/Soong/Bazel orchestration with automation hooks.</li>
+              <li>Cache/memory microbench harnesses for Arm labs.</li>
+              <li>Deployment tooling across Go, Bash, Python.</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <img src="assets/icons/build.svg" alt="Collaboration icon" />
+            <div>
+              <h3>Cross-Team Delivery</h3>
+              <p>Working with Google, Meta, Samsung, and partner silicon teams while keeping communication measured.</p>
+            </div>
+            <ul>
+              <li>RFC writing, design reviews, async updates.</li>
+              <li>Mentoring (NIT Warangal, Arm internal cohorts).</li>
+              <li>Governance for responsible AI rollouts.</li>
+            </ul>
+          </article>
         </div>
       </section>
 
@@ -255,7 +301,7 @@
             <ul>
               <li>Custom profilers + microbench harness to expose Neoverse cache behaviors.</li>
               <li>Performance guardrails gating every Velox merge via GitHub Actions.</li>
-              <li>Documented playbooks for Meta + Arm partner teams.</li>
+              <li>Documented playbooks and open notes (see github.com/NikhilTarte) for partner teams.</li>
             </ul>
           </article>
           <article class="pod-card" data-accent="violet">
@@ -269,7 +315,7 @@
             <ul>
               <li>Pipeline stitching Go, Bash, Make, and Python to unify Pixel bring-up.</li>
               <li>Nightly verification matrix covering kernels, HALs, CTS, and perf smoke.</li>
-              <li>Reusable infrastructure now backing Snapdragon beta programs.</li>
+              <li>Reusable infrastructure and ML model converters now backing Snapdragon beta programs.</li>
             </ul>
           </article>
           <article class="pod-card" data-accent="amber">
@@ -309,6 +355,7 @@
             <ul>
               <li>Github · <a href="https://github.com/NikhilTarte-Arm" target="_blank" rel="noreferrer">@NikhilTarte-Arm</a></li>
               <li>Github · <a href="https://github.com/NikhilTarte" target="_blank" rel="noreferrer">@NikhilTarte</a></li>
+              <li>AI library optimizations, converter samples, and automation tooling documented in public repos.</li>
             </ul>
           </article>
           <article>
@@ -329,11 +376,23 @@
             <p class="eyebrow">Let’s build</p>
             <h2>Drop me a note.</h2>
             <p>I read everything personally. Edge computing, AI, open-source, or bold platform bets—let’s talk.</p>
-            <div class="contact-meta">
-              <a href="https://www.linkedin.com/in/nikhiltarte" target="_blank" rel="noreferrer">LinkedIn · /nikhiltarte</a>
-              <a href="https://github.com/NikhilTarte" target="_blank" rel="noreferrer">GitHub · /NikhilTarte</a>
-              <a href="https://instagram.com/nikhiltarte" target="_blank" rel="noreferrer">Instagram · @nikhiltarte</a>
-              <a href="https://www.facebook.com/nikhiltarte" target="_blank" rel="noreferrer">Facebook · /nikhiltarte</a>
+            <div class="contact-meta" aria-label="Extended profiles">
+              <a class="social-chip" href="https://www.linkedin.com/in/nikhiltarte" target="_blank" rel="noreferrer">
+                <img src="assets/icons/linkedin.svg" alt="" aria-hidden="true" />
+                <span>LinkedIn · /nikhiltarte</span>
+              </a>
+              <a class="social-chip" href="https://github.com/NikhilTarte" target="_blank" rel="noreferrer">
+                <img src="assets/icons/github.svg" alt="" aria-hidden="true" />
+                <span>GitHub · /NikhilTarte</span>
+              </a>
+              <a class="social-chip" href="https://instagram.com/nikhiltarte" target="_blank" rel="noreferrer">
+                <img src="assets/icons/instagram.svg" alt="" aria-hidden="true" />
+                <span>Instagram · @nikhiltarte</span>
+              </a>
+              <a class="social-chip" href="https://www.facebook.com/nikhiltarte" target="_blank" rel="noreferrer">
+                <img src="assets/icons/facebook.svg" alt="" aria-hidden="true" />
+                <span>Facebook · /nikhiltarte</span>
+              </a>
             </div>
           </div>
           <form action="https://formsubmit.co/nikhilttarte@gmail.com" method="POST" class="contact-form">
