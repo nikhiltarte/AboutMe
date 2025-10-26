@@ -790,6 +790,40 @@ body.theme-light .theme-toggle .toggle-icon {
   color: #020205;
 }
 
+.human-check {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.human-check input {
+  margin-top: 0.35rem;
+  width: 100%;
+}
+
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1.25rem;
+  background: rgba(9, 11, 19, 0.95);
+  border: 1px solid var(--border);
+  color: var(--text);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  pointer-events: none;
+  max-width: 260px;
+  text-align: center;
+  z-index: 5;
+}
+
+.toast.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 .form-status {
   font-size: 0.85rem;
   color: var(--muted);
