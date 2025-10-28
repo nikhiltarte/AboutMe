@@ -924,13 +924,6 @@ body.theme-light .theme-toggle .toggle-label {
 }
 
 
-.form-status {
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin: 0.35rem 0 0;
-  min-height: 1rem;
-}
-
 .tiny {
   font-size: 0.75rem;
   color: var(--muted);
