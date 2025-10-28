@@ -172,9 +172,30 @@ const initNavIndicator = () => {
   setIndicator(chips[0]);
 };
 
+const initThanksModal = () => {
+  const overlay = document.getElementById('thanksOverlay');
+  const dismiss = document.getElementById('thanksDismiss');
+  if (!overlay || !dismiss) return;
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('status') === 'thanks') {
+    overlay.hidden = false;
+    const close = () => {
+      overlay.hidden = true;
+      params.delete('status');
+      const cleaned = `${window.location.pathname}${params.toString() ? `?${params}` : ''}`;
+      window.history.replaceState({}, document.title, cleaned);
+    };
+    dismiss.addEventListener('click', close, { once: true });
+    overlay.addEventListener('click', event => {
+      if (event.target === overlay) close();
+    }, { once: true });
+  }
+};
+
 setYear();
 enableScrollReveals();
 enablePodTilt();
 initThemeToggle();
 enableSmoothAnchors();
 initNavIndicator();
+initThanksModal();
