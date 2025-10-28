@@ -84,7 +84,9 @@ const initThemeToggle = () => {
   if (stored) {
     applyTheme(stored);
   } else {
-    applyTheme(prefersDark.matches ? 'dark' : 'dark');
+    const day = new Date().getDate();
+    const defaultTheme = day % 2 === 0 ? 'light' : 'dark';
+    applyTheme(defaultTheme);
   }
   toggle.addEventListener('click', () => {
     const next = document.body.classList.contains('theme-light') ? 'dark' : 'light';
