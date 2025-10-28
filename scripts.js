@@ -74,20 +74,20 @@ const initThemeToggle = () => {
       // ignore storage failures
     }
   };
-  const stored = (() => {
-    try {
-      return localStorage.getItem('theme');
-    } catch {
-      return null;
-    }
-  })();
-  if (stored) {
-    applyTheme(stored);
-  } else {
-    const day = new Date().getDate();
-    const defaultTheme = day % 2 === 0 ? 'light' : 'dark';
-    applyTheme(defaultTheme);
+const stored = (() => {
+  try {
+    return localStorage.getItem('theme');
+  } catch {
+    return null;
   }
+})();
+if (stored) {
+  applyTheme(stored);
+} else {
+  const day = new Date().getDate();
+  const defaultTheme = day % 2 === 0 ? 'light' : 'dark';
+  applyTheme(defaultTheme);
+}
   toggle.addEventListener('click', () => {
     const next = document.body.classList.contains('theme-light') ? 'dark' : 'light';
     applyTheme(next);
