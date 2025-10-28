@@ -194,6 +194,17 @@ const initThanksModal = () => {
   }
 };
 
+const initReplyToSync = () => {
+  const form = document.querySelector('.contact-form');
+  if (!form) return;
+  const emailField = form.querySelector('input[name="email"]');
+  const replyField = form.querySelector('#replytoField');
+  if (!emailField || !replyField) return;
+  form.addEventListener('submit', () => {
+    replyField.value = emailField.value;
+  });
+};
+
 setYear();
 enableScrollReveals();
 enablePodTilt();
@@ -201,3 +212,4 @@ initThemeToggle();
 enableSmoothAnchors();
 initNavIndicator();
 initThanksModal();
+initReplyToSync();
